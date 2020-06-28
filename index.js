@@ -10,7 +10,7 @@ module.exports = (bot, port = 3000) => {
 
   app.use('/', express.static(path.join(__dirname, 'public')))
 
-  app.get('/index.js', expressBrowserify('src/index.js'))
+  app.get('/index.js', expressBrowserify('src/prismarine-viewer/src/index.js'))
 
   const sockets = []
   const primitives = {}
